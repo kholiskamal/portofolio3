@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans:ital,wght@1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+}
+#bg-vidio {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+}
+.vidio-info {
+  z-index: 99;
+  position: relative;
+  color: #00cc00;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.vidio-info h1 {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.vidio-info h2 {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.vidio-info h3 {
+  margin-bottom: 1.5rem;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  background: #00cc00;
+  text-decoration: none;
+  color: aliceblue;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.bt:hover {
+  background: #00cc00;
+}
+@media screen and (max-width: 768px) {
+  .vidio-info {
+    padding: 1rem;
+  }
+  .vidio-info h2 {
+    font-size: 1.5rem;
+  }
+  .vidio-info h2 {
+    font-size: 2rem;
+  }
+}
